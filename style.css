@@ -67,10 +67,11 @@
     margin-top: 1rem;
 }
 
-.form-inputs p {
+.heading-input {
     font-weight: bold;
     font-family: var(--font);
-    font-size: 1.4rem;
+    font-size: 1.6rem !important;
+    margin-top: 10px !important;
 }
 
 .form-inputs {
@@ -114,19 +115,28 @@ form {
 form label {
     font-weight: bold;
     color: rgb(83, 83, 83);
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 1px;
 }
 
 form input {
-    height: 35px;
+    height: 32px;
     border-radius: 3px;
     border: 1px solid rgba(160, 160, 160, 0.692);
+    padding-left: 10px;
+    font-size: 1rem;
+    font-family: var(--font);
 }
 
 input:focus {
-    border: 1px solid blue;
+    outline: none;
+    border: 2px solid blue;
+}
+
+input:invalid {
+    outline: none;
+    border: 2px solid red;
 }
 
 button {
@@ -138,4 +148,29 @@ button {
     background-color: rgb(68, 104, 68);
     color: white;
     border-radius: 7px;
+    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    transform: scale(1);
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(68, 102, 68, 0.3);
+}
+
+.form-inputs p {
+    font-family: var(--font);
+    font-weight: 600;
+    font-size: 1.05rem;
+    margin-top: 30px;
+}
+
+.form-inputs a {
+    color: rgb(68, 104, 68);
+    cursor: pointer;
+}
+
+a:hover {
+    color: rgb(112, 163, 112);
+    transition: color 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

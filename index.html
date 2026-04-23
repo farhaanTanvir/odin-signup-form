@@ -21,7 +21,7 @@
             <div class="heading"><p>This is not a real online service! You know you need something in your life to help you realize your deepest dreams. Sign up <i>now</i> to get started.</p> <br> <p>You <i>know</i> you want to.</p></div>
 
             <div class="form-inputs">
-                 <p>Let's Do This!</p>
+                 <p class="heading-input">Let's Do This!</p>
 
                  <form>
                     <div class="input-container">
@@ -31,31 +31,33 @@
 </div>
 
 <div class="form-group">
-  <label for="email">Email</label>
-  <input type="email" id="email" name="email">
-</div>
-
-<div class="form-group">
-  <label for="password">Password</label>
-  <input type="password" id="password" name="password">
-</div>
-
-<div class="form-group">
   <label for="last-name">Last Name</label>
   <input type="text" id="last-name" name="last-name">
 </div>
 
 <div class="form-group">
-  <label for="phone">Phone Number</label>
-  <input type="tel" id="phone" name="phone">
+  <label for="email">Email</label>
+  <input type="email" id="email" name="email" >
 </div>
 
 <div class="form-group">
+  <label for="phone">Phone Number</label>
+  <input type="tel" id="phone" name="phone" >
+</div>
+
+<div class="form-group">
+  <label for="password">Password</label>
+  <input type="password" id="password" required name="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}">
+</div>
+
+
+<div class="form-group">
   <label for="confirm-password">Confirm Password</label>
-  <input type="password" id="confirm-password" name="confirm-password">
+  <input type="password" id="confirm-password" name="confirm-password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required>
 </div>
                     </div>
                     <button type="submit">Create Account</button>
+                    <p>Already have an account? <a>Log in</a></p>
                  </form>
             </div>
 
